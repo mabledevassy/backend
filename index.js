@@ -16,6 +16,11 @@ app.get('/view',async(request,response)=>{
     console.log(data)
     response.send(data)
 })
+app.put('/edit/:id',async(request,response)=>{
+    let id=request.params.id
+    await studentmodel.findByIdAndUpdate(id.request.body)
+    response.send("Data updated")
+})
 
 app.post('/new',(request,response)=>{
     console.log(request.body)
