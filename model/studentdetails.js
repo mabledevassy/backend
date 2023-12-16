@@ -16,7 +16,12 @@ const studentschema=new sc({
         Admno:Number,
         Name:String,
         Age:Number,
-        Course:String
+        Course:String,
+        image1:{
+            data:Buffer,
+            contentType:String,
+            
+        }
         
     });
 
